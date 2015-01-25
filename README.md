@@ -22,6 +22,8 @@ OO_latex
 
 - a valid pdflatex installation, which is in the PATH variable set in ~/.bash_profile
 - python with packages sys, os, datetime, time
+- [pdfcrop][pc]
+- ghostscript (for Yosemite see [here][gs])
 
 
 # Thanks!
@@ -37,3 +39,5 @@ This script was possible with the help of these forum posts
  [1]: https://discussions.apple.com/thread/5873254
  [2]: http://forums.omnigroup.com/showthread.php?t=31158&highlight=latex
  [3]: http://forums.omnigroup.com/showthread.php?p=129533#post129533
+ [gs]: http://pages.uoregon.edu/koch/
+ [pc]: http://pdfcrop.sourceforge.net
