@@ -25,6 +25,12 @@ OO_latex
 - [pdfcrop][pc]
 - ghostscript (for Yosemite see [here][gs])
 
+# Notes
+
+- 20160616: the current version works with TexLive 2016; 
+	- see related discussion on [apple.stackexchange][apple_se]; 
+	- depending where `pdflatex` and `pdfcrop` are located, you might need to change things in `~/.bash_profile`
+	- depending on where `pdfcrop` resides or where it looks for dependencies, you might have to adapt its options (f.ex. to point to `pdftex`)
 
 # Thanks!
 
@@ -41,3 +47,4 @@ This script was possible with the help of these forum posts
  [3]: http://forums.omnigroup.com/showthread.php?p=129533#post129533
  [gs]: http://pages.uoregon.edu/koch/
  [pc]: http://pdfcrop.sourceforge.net
+ [apple_se]: http://apple.stackexchange.com/questions/242824/calling-terminal-command-pdfcrop-either-directly-from-python-or-from-within-ap
