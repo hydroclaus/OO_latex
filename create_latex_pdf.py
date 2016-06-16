@@ -10,10 +10,10 @@ import time
 
 __author__ = "Claus Haslauer (mail@planetwater.org)"
 __version__ = "$Revision: 0.1 $"
-__date__ = datetime.datetime(2014,02,02)
+__date__ = datetime.datetime(2014,2,2)
 
 
-def main():
+def main(talk_to_me=True):
     """
     this script uses `pdflatex` and `pdfcrop` to produce a pdf of a latex string that is passed to the script as command line argument
     
@@ -22,7 +22,7 @@ def main():
     - there is no test for this string being a valid latex expression
     
     """
-    
+    print"\n====================================\nStarting `create_latex_pdf.py` !"
     cur_path = os.getcwd() 
     
     # # check if previous files exist; if yes: delete them
@@ -37,7 +37,7 @@ def main():
         try:
             os.remove(filename)
         except:
-            print "file did not exist"
+            print "the file %s did not exist" % filename
             pass
            
     # # other option    
@@ -48,7 +48,8 @@ def main():
     
     # # this is the latex string that is being passed
     str_latex_note = sys.argv[1]
-    print "%s" %  str_latex_note
+    if talk_to_me is True:
+        print "latex string is:\n    %s" %  str_latex_note
  
  
      # # this is a minimal latex template into which the string is inserted
@@ -71,17 +72,32 @@ def main():
     fobj.writelines(preamble)
     fobj.close()
     
-    ## process latex file
+    # --------------------------------------------------------------------------------
+    #                                                                    call pdflatex
+    # --------------------------------------------------------------------------------
     # print cur_path
     os.chdir(cur_path)
-    cmd = '/usr/texbin/pdflatex temp.tex'
-    # print cmd
+    ## cmd = '/usr/texbin/pdflatex temp.tex'           #  pre ElCapitan
+    cmd_pdflatex = '/Library/TeX/texbin/pdflatex temp.tex'
+    ## cmd_pdflatex = 'pdflatex temp.tex'
+    if talk_to_me is True:
+        print "command for executing pdflatex:\n    ", cmd_pdflatex
     # print "running latex"
-    os.system(cmd)
+    os.system(cmd_pdflatex)
     
-    cmd2 = '/usr/texbin//pdfcrop temp.pdf'
-    os.system(cmd2)
+    # --------------------------------------------------------------------------------
+    #                                                                     call pdfcrop
+    # --------------------------------------------------------------------------------
+    ## cmd2 = '/usr/texbin/pdfcrop temp.pdf'           #  pre ElCapitan
+    ##cmd_pdfcrop = '/usr/local/texlive/2016/bin/x86_64-darwin/pdfcrop temp.pdf temp-crop.pdf --verbose'
+    cmd_pdfcrop = '/Library/TeX/texbin/pdfcrop temp.pdf temp-crop.pdf'  #   --verbose'
+    ## cmd_pdfcrop = 'pdfcrop temp.pdf temp-crop.pdf --verbose'
+    if talk_to_me is True:
+        print "command for executing pdfcrop:\n    ", cmd_pdfcrop
+    os.system(cmd_pdfcrop)
     
+    if talk_to_me is True:
+        print"Script is done\n===================================="
     
 if __name__ == '__main__':
     main()
