@@ -22,7 +22,7 @@ def main(talk_to_me=True):
     - there is no test for this string being a valid latex expression
     
     """
-    print"\n====================================\nStarting `create_latex_pdf.py` !"
+    print("\n====================================\nStarting `create_latex_pdf.py` !")
     cur_path = os.getcwd() 
     
     # # check if previous files exist; if yes: delete them
@@ -37,7 +37,7 @@ def main(talk_to_me=True):
         try:
             os.remove(filename)
         except:
-            print "the file %s did not exist" % filename
+            print("the file %s did not exist" % filename)
             pass
            
     # # other option    
@@ -49,21 +49,17 @@ def main(talk_to_me=True):
     # # this is the latex string that is being passed
     str_latex_note = sys.argv[1]
     if talk_to_me is True:
-        print "latex string is:\n    %s" %  str_latex_note
+        print("latex string is:\n    %s" %  str_latex_note)
  
  
      # # this is a minimal latex template into which the string is inserted
-    preamble = """\documentclass{article}
-\usepackage{amsmath,amssymb}
-\pagestyle{empty}
-
-\\begin{document}
-{\huge
-\[
- %s
- \]
-}
-\end{document}"""% (str_latex_note)
+    preamble = "\\documentclass{{article}}\n\
+    \\usepackage{{amsmath, amssymb}}\n\
+    \\pagestyle{{empty}} \n\
+    \\begin{{document}} \n\
+    {{\huge \n\
+    \[ \n {:} \n \]}} \n\
+    \\end{{document}}".format(str_latex_note)
      
     
     ## write latex file
@@ -75,14 +71,14 @@ def main(talk_to_me=True):
     # --------------------------------------------------------------------------------
     #                                                                    call pdflatex
     # --------------------------------------------------------------------------------
-    # print cur_path
+    # print(cur_path)
     os.chdir(cur_path)
     ## cmd = '/usr/texbin/pdflatex temp.tex'           #  pre ElCapitan
     cmd_pdflatex = '/Library/TeX/texbin/pdflatex temp.tex'
     ## cmd_pdflatex = 'pdflatex temp.tex'
     if talk_to_me is True:
-        print "command for executing pdflatex:\n    ", cmd_pdflatex
-    # print "running latex"
+        print("command for executing pdflatex:\n    ", cmd_pdflatex)
+    # print("running latex")
     os.system(cmd_pdflatex)
     
     # --------------------------------------------------------------------------------
@@ -93,11 +89,11 @@ def main(talk_to_me=True):
     cmd_pdfcrop = '/Library/TeX/texbin/pdfcrop temp.pdf temp-crop.pdf'  #   --verbose'
     ## cmd_pdfcrop = 'pdfcrop temp.pdf temp-crop.pdf --verbose'
     if talk_to_me is True:
-        print "command for executing pdfcrop:\n    ", cmd_pdfcrop
+        print("command for executing pdfcrop:\n    ", cmd_pdfcrop)
     os.system(cmd_pdfcrop)
     
     if talk_to_me is True:
-        print"Script is done\n===================================="
+        print("Script is done\n====================================")
     
 if __name__ == '__main__':
     main()
