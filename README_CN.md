@@ -36,7 +36,7 @@
 正如 [**Eric Doviak**](http://pdfcrop.sourceforge.net/) 所说:
 > PDFCrop 是一个 Perl 脚本，可裁剪 PDF 页面的空白边距并重新缩放它们以适合标准尺寸的纸张。它使印刷的页面更具吸引力！
 
-如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载][Click here to download](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz)。 安装完后，将压缩包解压并把程序移动到合适的文件夹里 (比如我把文件存在 `Users` 的路径之下)。或者，你可以通过 root 权限将 `pdfcrop` 移动到 `/usr/local/bin/` 目录之下。然后，把程序重命名为 `pdfcrop` 并打开终端以输入以下命令:
+如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz)。 安装完后，将压缩包解压并把程序移动到合适的文件夹里 (比如我把文件存在 `Users` 的路径之下)。或者，你可以通过 root 权限将 `pdfcrop` 移动到 `/usr/local/bin/` 目录之下。然后，把程序重命名为 `pdfcrop` 并打开终端以输入以下命令:
 ```terminal
 cd "your path for this folder"
 sudo su
