@@ -30,13 +30,13 @@ This guide will help you successfully configure environment settings step by ste
 # Prerequisites
 To be able to successfully use Latex in OmniOutliner on your macOS X system, you must install the following packages.
 ## Step 1: Install Python 3
-Although the current system already has `Python 2.7`. However, as we have known, `Python 2.7` will be no longer maintained by [2020](https://pythonclock.org/). Given that, you need to install a Python interpreter whose version number must be 3.+ above. [Click here to download]() 3.8 if you haven't any 3.+ Python.
+Although the current system already has `Python 2.7`. However, as we have known, `Python 2.7` will be no longer maintained by [2020](https://pythonclock.org/). Given that, you need to install a Python interpreter whose version number must be 3.+ above. [Click here to download](https://www.python.org/ftp/python/3.8.1/python-3.8.1-macosx10.9.pkg) 3.8 if you haven't any 3.+ Python.
 ## Step 2: Install ghostscript
-`ghostscript` is a package for `PDFCrop`. [Click here to download]() if you don't have this package.
+`ghostscript` is a package for `PDFCrop`. [Click here to download](https://pages.uoregon.edu/koch/Ghostscript-9.50.pkg) if you don't have this package.
 ## Step 3: Install PDFCrop
 As [**Eric Doviak**](http://pdfcrop.sourceforge.net/) said:
 > PDFCrop is a Perl script that crops the white margins of PDF pages and rescales them to fit a standard size sheet of paper. It makes the printed pages far more attractive to read!
-[Click here to download]() if you don't have this package. After installation, decompress the compressed package to the suitable folder (e.g., for me is the folder under the directory of `Users`). Alternatively, you could (as root) copy `pdfcrop` to `/usr/local/bin/`. Then, rename the folder name as `pdfcrop` and open the terminal and enter the following commands:
+[Click here to download](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz) if you don't have this package. After installation, decompress the compressed package to the suitable folder (e.g., for me is the folder under the directory of `Users`). Alternatively, you could (as root) copy `pdfcrop` to `/usr/local/bin/`. Then, rename the folder name as `pdfcrop` and open the terminal and enter the following commands:
 ```terminal
 cd "your path for this folder"
 sudo su
@@ -48,7 +48,7 @@ According to the [StackExchange](https://superuser.com/questions/1038612/where-d
 ### MacTex
 The first one is `MacTex`. MacTex is the [recommended](https://www.latex-project.org/get/) Latex software for macOS X. However, the size of this package is over 4 G, which is quite big for this small function. But if you are a Latex fan, please enjoy MacTex!
 
-[Click here to download]() if you want this package or enter the following command in the terminal if you have already installed [brew](https://brew.sh/).
+[Click here to download](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg) if you want this package or enter the following command in the terminal if you have already installed [brew](https://brew.sh/).
 ```terminal
 brew cask install mactex
 ```
