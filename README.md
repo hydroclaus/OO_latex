@@ -20,7 +20,7 @@ Latex in OmniOutliner
 [![OS](https://img.shields.io/badge/OS-macOS%2010.14.6-%237060FF)](https://support.apple.com/kb/DL2015?locale=en_US&viewlocale=en_US)
 [![OmniOutliner](https://img.shields.io/badge/OmniOutliner-5.5.2-important)](http://www.omnigroup.com/releasenotes/omnioutliner-mac)
 
-[中文](README_CN.md) | English
+English | [中文](README_CN.md)
 
 Last updated on `2019/12/21`
 
