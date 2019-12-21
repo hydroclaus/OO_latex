@@ -60,7 +60,7 @@ brew cask install mactex
 brew cask install basictex
 ```
 # 手动设置
-除了以上4步以外，我们只需再进过两步就能完成安装啦！
+除了以上 4 步以外，我们只需再进过两步就能完成安装啦！
 ## 下载并移动文件
 1. 首先，请从本仓库下载 `OO_latex.scpt` 和 `create_latex_pdf.py` 这两个文件。
 
@@ -78,7 +78,7 @@ brew cask install basictex
 <p align="center"><img src ="images/toolbar.png" width = "400px"></p>
 
 ## 操作方法
-恭喜您！如果您阅读到这一步的话说明您已经配置成功啦！在之后的使用中， 你只需要在 **注释** 中写下您的 Latex 公式 然后工具栏上相对应的脚本图标，静待3秒钟后您就可以在对应的标题看到生成的结果啦，结果如图所示。
+恭喜您！如果您阅读到这一步的话说明您已经配置成功啦！在之后的使用中， 你只需要在 **注释** 中写下您的 Latex 公式 然后工具栏上相对应的脚本图标，静待 3 秒钟后您就可以在对应的标题看到生成的结果啦，结果如图所示。
 
 <p align="center"><img src ="images/equation.png" width = "600px"></p>
 
