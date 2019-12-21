@@ -35,6 +35,7 @@
 ## 第三步: 安装 PDFCrop
 正如 [**Eric Doviak**](http://pdfcrop.sourceforge.net/) 所说:
 > PDFCrop 是一个 Perl 脚本，可裁剪 PDF 页面的空白边距并重新缩放它们以适合标准尺寸的纸张。它使印刷的页面更具吸引力！
+
 如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载][Click here to download](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz)。 安装完后，将压缩包解压并把程序移动到合适的文件夹里 (比如我把文件存在 `Users` 的路径之下)。或者，你可以通过 root 权限将 `pdfcrop` 移动到 `/usr/local/bin/` 目录之下。然后，把程序重命名为 `pdfcrop` 并打开终端以输入以下命令:
 ```terminal
 cd "your path for this folder"
@@ -76,10 +77,10 @@ brew cask install basictex
 
 <p align="center"><img src ="images/toolbar.png" width = "400px"></p>
 
-## How to use
-Congratulations! You have successfully achieved this function. In the future, the only thing you need to do is write your Latex equation code in the **Note** section and about 3 seconds later you can see the result in the corresponding heading.
+## 操作方法
+恭喜您！如果您阅读到这一步的话说明您已经配置成功啦！在之后的使用中， 你只需要在 **注释** 中写下您的 Latex 公式 然后工具栏上相对应的脚本图标，静待3秒钟后您就可以在对应的标题看到生成的结果啦，结果如图所示。
 
 <p align="center"><img src ="images/equation.png" width = "600px"></p>
 
-# Acknowledgement
-This guide was written based on the works from [Yu Wang](https://github.com/wyhitcs/Latex_in_OO) and [Claus Haslauer](https://github.com/clausTue/OO_latex).
+# 感谢
+这篇指南是在 [Yu Wang](https://github.com/wyhitcs/Latex_in_OO) 和 [Claus Haslauer](https://github.com/clausTue/OO_latex) 的成果基础上整合的。
