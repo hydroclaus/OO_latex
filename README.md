@@ -80,7 +80,7 @@ Finally, open an OmniOutliner file, click `View → Customize Toolbar...`, then 
 <p align="center"><img src ="images/toolbar.png" width = "400px"></p>
 
 ## How to use
-Congratulations! You have successfully achieved this function. In the future, the only thing you need to do is write your Latex equation code in the **Note** section and about 3 seconds later you can see the result in the corresponding heading.
+Congratulations! You have successfully achieved this function. In the future, the only thing you need to do is write your Latex equation code in the **Note** section and click that purple icon. About 3 seconds later you can see the result in the corresponding heading. The figure is shown as follows.
 
 <p align="center"><img src ="images/equation.png" width = "600px"></p>
 
