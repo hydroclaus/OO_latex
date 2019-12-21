@@ -12,7 +12,7 @@ Table of Contents
       * [Download and Move](#download-and-move)
       * [How to use](#how-to-use)
    * [Acknowledgement](#acknowledgement)
-   
+
 Latex in OmniOutliner
 ========
 [![LICENSE](https://img.shields.io/cran/l/devtools)](https://github.com/Hephaest/OO_latex/blob/master/LICENSE)
@@ -20,8 +20,10 @@ Latex in OmniOutliner
 [![OS](https://img.shields.io/badge/OS-macOS%2010.14.6-%237060FF)](https://support.apple.com/kb/DL2015?locale=en_US&viewlocale=en_US)
 [![OmniOutliner](https://img.shields.io/badge/OmniOutliner-5.5.2-important)](http://www.omnigroup.com/releasenotes/omnioutliner-mac)
 
-
 [中文](README_CN.md) | English
+
+<p align="center"><img src ="images/demo.gif" width = "600px"></p>
+
 # Introduction
 This repository introduces an easy way to display Latex equations in OmniOutliner since itself doesn't provide this service.
 This guide will help you successfully configure environment settings step by step. The only thing you need to note is that this works only in the operating system of `mac OS X`.
@@ -74,8 +76,13 @@ The functions of this script are (quote from **Claus Haslauer**):
 Thirdly, move the file `create_latex_pdf.py` to `~/Documents/OmniOutliner5/` (if not exists create a folder).
 
 Finally, open an OmniOutliner file, click `View → Customize Toolbar...`, then you can find your script as shown in the following screenshot.
+
+<p align="center"><img src ="images/toolbar.png" width = "400px"></p>
+
 ## How to use
 Congratulations! You have successfully achieved this function. In the future, the only thing you need to do is write your Latex equation code in the **Note** section and about 3 seconds later you can see the result in the corresponding heading.
+
+<p align="center"><img src ="images/equation.png" width = "600px"></p>
 
 # Acknowledgement
 This guide was written based on the works from [Yu Wang](https://github.com/wyhitcs/Latex_in_OO) and [Claus Haslauer](https://github.com/clausTue/OO_latex).
