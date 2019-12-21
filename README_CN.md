@@ -2,7 +2,7 @@
 =================
    * [介绍](#介绍)
    * [预安装](#预安装)
-      * [第一步: 安装 Python 3 ](#第一步-安装l-python-3)
+      * [第一步: 安装 Python 3](#第一步-安装-python-3)
       * [第二步: 安装 ghostscript](#第二步-安装-ghostscript)
       * [第三步: 安装 PDFCrop](#第三步-安装-pdfcrop)
       * [第四步: 安装 PDFLatex](#第四步-安装-pdflatex)
@@ -25,36 +25,36 @@
 <p align="center"><img src ="images/demo.gif" width = "600px"></p>
 
 # 介绍
-本仓库介绍了一种可以在 OmniOutliner 中显示 Latex 生成的公式的方法，OmniOutliner 到目前为止并没有原生的解决方法。这篇指南会引导各位一步一步配置环境，尤其是没有任何编程背景的朋友们。各位唯一需要注意的一点是这项功能能使用的前提是在 `macOS X` 操作系统的环境下。
+本仓库介绍了一种可以在 OmniOutliner 中显示 Latex 生成的公式的方法，OmniOutliner 到目前为止并没有原生的解决方法。这篇指南会引导您一步一步配置环境，尤其是没有任何编程背景的朋友们。您唯一需要注意的一点是这项功能能使用的前提是在 `macOS X` 操作系统的环境下。
 # 预安装
-To be able to successfully use Latex in OmniOutliner on your macOS X system, you must install the following packages.
+为了确保 Latex 生成的结果能够在您的 OmniOutliner 中成功显示，您需要安装以下几个安装包。
 ## 第一步: 安装 Python 3
-Although the current system already has `Python 2.7`. However, as we have known, `Python 2.7` will be no longer maintained by [2020](https://pythonclock.org/). Given that, you need to install a Python interpreter whose version number must be 3.+ above. [Click here to download](https://www.python.org/ftp/python/3.8.1/python-3.8.1-macosx10.9.pkg) 3.8 if you haven't any 3.+ Python.
+虽然当前 macOS X 下自带的版本还是 `Python 2.7` 。但是众所周知自 [2020](https://pythonclock.org/) 年后官方将不再维护 `Python 2.7` 了。鉴于这种情况，您需要安装一个版本在 3.+ 之上的 Python 解释器。如果您电脑上还没有相对应的 Python 版本的话，不妨[点击这里开始下载](https://www.python.org/ftp/python/3.8.1/python-3.8.1-macosx10.9.pkg) `Python 3.8.1`。
 ## 第二步: 安装 ghostscript
-`ghostscript` is a package for `PDFCrop`. [Click here to download](https://pages.uoregon.edu/koch/Ghostscript-9.50.pkg) if you don't have this package.
+`ghostscript` 是一个对 `PDFCrop` 不可或缺的包。如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载](https://pages.uoregon.edu/koch/Ghostscript-9.50.pkg)。
 ## 第三步: 安装 PDFCrop
-As [**Eric Doviak**](http://pdfcrop.sourceforge.net/) said:
-> PDFCrop is a Perl script that crops the white margins of PDF pages and rescales them to fit a standard size sheet of paper. It makes the printed pages far more attractive to read!
-[Click here to download](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz) if you don't have this package. After installation, decompress the compressed package to the suitable folder (e.g., for me is the folder under the directory of `Users`). Alternatively, you could (as root) copy `pdfcrop` to `/usr/local/bin/`. Then, rename the folder name as `pdfcrop` and open the terminal and enter the following commands:
+正如 [**Eric Doviak**](http://pdfcrop.sourceforge.net/) 所说:
+> PDFCrop 是一个 Perl 脚本，可裁剪 PDF 页面的空白边距并重新缩放它们以适合标准尺寸的纸张。它使印刷的页面更具吸引力！
+如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载][Click here to download](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz)。 安装完后，将压缩包解压并把程序移动到合适的文件夹里 (比如我把文件存在 `Users` 的路径之下)。或者，你可以通过 root 权限将 `pdfcrop` 移动到 `/usr/local/bin/` 目录之下。然后，把程序重命名为 `pdfcrop` 并打开终端以输入以下命令:
 ```terminal
 cd "your path for this folder"
 sudo su
 chmod 755 pdfcrop
 ```
 ## 第四步: 安装 PDFLatex
-According to the [StackExchange](https://superuser.com/questions/1038612/where-do-i-get-the-pdflatex-program-for-mac), there are 2 ways to install `pdflatex` to macOS X. 
+根据 [StackExchange](https://superuser.com/questions/1038612/where-do-i-get-the-pdflatex-program-for-mac) 上的经验分享，目前有两种主流的方式用于安装 `pdflatex` 到 macOS X。 
 
 ### MacTex
-The first one is `MacTex`. MacTex is the [recommended](https://www.latex-project.org/get/) Latex software for macOS X. However, the size of this package is over 4 G, which is quite big for this small function. But if you are a Latex fan, please enjoy MacTex!
+第一个是 `MacTex`。MacTex 是官方[推荐的](https://www.latex-project.org/get/) 针对 macOS X 的 Latex 免费软件。然而，该文件的大小超过 4 G，这样的安装要求对于这个小功能而言显然是大材小用了。但是如果您是 Latex 爱好者，请进行享受 MacTex 带来的愉快体验！
 
-[Click here to download](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg) if you want this package or enter the following command in the terminal if you have already installed [brew](https://brew.sh/).
+如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg) 或者您是 [brew](https://brew.sh/) 用户的话，您可以在终端输入下方的指令以安装程序：
 ```terminal
 brew cask install mactex
 ```
 ### BasicTeX
-Another one is called `BasicTeX`. BasicTeX also provides `pdflatex` and only uses a smaller storage size as it doesn't have GUI.
+另外一个是 `BasicTeX`。BasicTeX 也提供了 `pdflatex` 的安装并且由于它没有 GUI 的功能所以程序总体要比 MacTex 小很多。
 
-You can only download it if you have already installed [brew](https://brew.sh/). Please enter the following command in the terminal:
+我没有试过这种方式，但是如果您是 [brew](https://brew.sh/) 用户的话，您可以在终端输入下方的指令尝试安装：
 ```terminal
 brew cask install basictex
 ```
