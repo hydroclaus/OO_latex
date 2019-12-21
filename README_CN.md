@@ -20,7 +20,7 @@
 [![OS](https://img.shields.io/badge/OS-macOS%2010.14.6-%237060FF)](https://support.apple.com/kb/DL2015?locale=en_US&viewlocale=en_US)
 [![OmniOutliner](https://img.shields.io/badge/OmniOutliner-5.5.2-important)](http://www.omnigroup.com/releasenotes/omnioutliner-mac)
 
-中文 | [English](README.md)
+[English](README.md) | 中文
 
 最后一次更新于 `2019/12/21`
 
