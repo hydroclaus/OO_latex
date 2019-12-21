@@ -58,23 +58,21 @@ brew cask install mactex
 ```terminal
 brew cask install basictex
 ```
-# Manual Settings
-In addition to the above four steps, there are also a few steps we need to take.
-## Download and Move
-Firstly, please download `OO_latex.scpt` and `create_latex_pdf.py` from this repository. 
+# 手动设置
+除了以上4步以外，我们只需再进过两步就能完成安装啦！
+## 下载并移动文件
+1. 首先，请从本仓库下载 `OO_latex.scpt` 和 `create_latex_pdf.py` 这两个文件。
 
-Secondly, move the file `OO_latex.scpt` to `~/Library/Application Scripts/com.omnigroup.OmniOutliner5` (Hint: this folder has been hided, you can use `Go` from Finder and search this path to find this file). 
+2. 其次，将文件 `OO_latex.scpt` 移动到 `~/Library/Application Scripts/com.omnigroup.OmniOutliner5` (小提示: 这个文件夹默认情况下是被隐藏的，您可以通过 **Finder** 的 **Go** 搜寻这个路径以找到相对应的文件)。 
 
-The functions of this script are (quote from **Claus Haslauer**):
-- gets content of note of selected row
-     this should be a latex - math command
-- passes the string of this content to a python script
-     that generates a pdf of the latex string
-- pastes a pdf of your latex string at the end of the selected row (not the note, the note stays there, found to be useful for future reference)
+这个脚本包含以下功能 (引用 **Claus Haslauer** 的原话):
+- 获取所选行的注释内容，这一行必须是 Latex 的数学公式代码。
+- 将内容通过字符串的方式传递给 python 脚本，这将生成相对应的 pdf 文件
+- 将生成的 pdf 裁剪后粘贴到所选行的末尾 (注释那行并不会被改变，生成完后可删除)。
 
-Thirdly, move the file `create_latex_pdf.py` to `~/Documents/OmniOutliner5/` (if not exists create a folder).
+3. 接着，将文件 `create_latex_pdf.py` 移动到 `~/Documents/OmniOutliner5/` (如果该文件夹不存在请创建一个)。
 
-Finally, open an OmniOutliner file, click `View → Customize Toolbar...`, then you can find your script as shown in the following screenshot.
+最后，打开任意一个 OmniOutliner 的文档，点击 `View → Customize Toolbar...`，然后您可以找到您的脚本，如以下屏幕截图所示。
 
 <p align="center"><img src ="images/toolbar.png" width = "400px"></p>
 
