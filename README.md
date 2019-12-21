@@ -22,6 +22,8 @@ Latex in OmniOutliner
 
 [中文](README_CN.md) | English
 
+Last updated on `2019/12/21`
+
 <p align="center"><img src ="images/demo.gif" width = "600px"></p>
 
 # Introduction
