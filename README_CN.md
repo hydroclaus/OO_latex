@@ -25,7 +25,7 @@
 <p align="center"><img src ="images/demo.gif" width = "600px"></p>
 
 # 介绍
-本仓库介绍了一种可以在 OmniOutliner 中显示 Latex 生成的公式的方法，OmniOutliner 到目前为止并没有原生的解决方法。这篇指南会引导各位一步一步配置环境，尤其是没有任何编程背景的朋友们。各位唯一需要注意的一点是这项功能能使用的前提是在 `mac OS X` 操作系统的环境下。
+本仓库介绍了一种可以在 OmniOutliner 中显示 Latex 生成的公式的方法，OmniOutliner 到目前为止并没有原生的解决方法。这篇指南会引导各位一步一步配置环境，尤其是没有任何编程背景的朋友们。各位唯一需要注意的一点是这项功能能使用的前提是在 `macOS X` 操作系统的环境下。
 # 预安装
 To be able to successfully use Latex in OmniOutliner on your macOS X system, you must install the following packages.
 ## 第一步: 安装 Python 3
