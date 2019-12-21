@@ -36,6 +36,7 @@ Although the current system already has `Python 2.7`. However, as we have known,
 ## Step 3: Install PDFCrop
 As [**Eric Doviak**](http://pdfcrop.sourceforge.net/) said:
 > PDFCrop is a Perl script that crops the white margins of PDF pages and rescales them to fit a standard size sheet of paper. It makes the printed pages far more attractive to read!
+
 [Click here to download](https://github.com/Hephaest/OO_latex/raw/master/downloads/pdfcrop_v0.4b.tar.gz) if you don't have this package. After installation, decompress the compressed package to the suitable folder (e.g., for me is the folder under the directory of `Users`). Alternatively, you could (as root) copy `pdfcrop` to `/usr/local/bin/`. Then, rename the folder name as `pdfcrop` and open the terminal and enter the following commands:
 ```terminal
 cd "your path for this folder"
