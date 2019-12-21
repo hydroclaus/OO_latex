@@ -26,7 +26,7 @@ Latex in OmniOutliner
 
 # Introduction
 This repository introduces an easy way to display Latex equations in OmniOutliner since itself doesn't provide this service.
-This guide will help you successfully configure environment settings step by step. The only thing you need to note is that this works only in the operating system of `mac OS X`.
+This guide will help you successfully configure environment settings step by step. The only thing you need to note is that this works only in the operating system of `macOS X`.
 # Prerequisites
 To be able to successfully use Latex in OmniOutliner on your macOS X system, you must install the following packages.
 ## Step 1: Install Python 3
