@@ -22,6 +22,8 @@
 
 中文 | [English](README.md)
 
+最后一次更新于 `2019/12/21`
+
 <p align="center"><img src ="images/demo.gif" width = "600px"></p>
 
 # 介绍
