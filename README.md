@@ -49,7 +49,7 @@ According to the [StackExchange](https://superuser.com/questions/1038612/where-d
 ### MacTex
 The first one is `MacTex`. MacTex is the [recommended](https://www.latex-project.org/get/) Latex software for macOS X. However, the size of this package is over 4 G, which is quite big for this small function. But if you are a Latex fan, please enjoy MacTex!
 
-[Click here to download](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg) if you want this package or enter the following command in the terminal if you have already installed [brew](https://brew.sh/).
+[Click here to download](http://mirror.ctan.org/systems/mac/mactex/mactex-20190508.pkg) if you want this package or enter the following command in the terminal if you have already installed [brew](https://brew.sh/).
 ```terminal
 brew cask install mactex
 ```
