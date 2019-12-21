@@ -2,7 +2,7 @@ Table of Contents
 =================
    * [Introduction](#introduction)
    * [Prerequisites](#prerequisites)
-      * [Step 1: Install Python 3. ](#step-1-install-python-3)
+      * [Step 1: Install Python 3 ](#step-1-install-python-3)
       * [Step 2: Install ghostscript](#step-2-install-ghostscript)
       * [Step 3: Install PDFCrop](#step-3-install-pdfcrop)
       * [Step 4: Install PDFLatex](#step-4-install-pdflatex)
@@ -27,7 +27,7 @@ This repository introduces an easy way to display Latex equations in OmniOutline
 This guide will help you successfully configure environment settings step by step. The only thing you need to note is that this works only in the operating system of `mac OS X`.
 # Prerequisites
 To be able to successfully use Latex in OmniOutliner on your macOS X system, you must install the following packages.
-## Step 1: Install Python 3.+
+## Step 1: Install Python 3
 Although the current system already has `Python 2.7`. However, as we have known, `Python 2.7` will be no longer maintained by [2020](https://pythonclock.org/). Given that, you need to install a Python interpreter whose version number must be 3.+ above. [Click here to download]() 3.8 if you haven't any 3.+ Python.
 ## Step 2: Install ghostscript
 `ghostscript` is a package for `PDFCrop`. [Click here to download]() if you don't have this package.
