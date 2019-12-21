@@ -48,7 +48,7 @@ chmod 755 pdfcrop
 ### MacTex
 第一个是 `MacTex`。MacTex 是官方[推荐的](https://www.latex-project.org/get/) 针对 macOS X 的 Latex 免费软件。然而，该文件的大小超过 4 G，这样的安装要求对于这个小功能而言显然是大材小用了。但是如果您是 Latex 爱好者，请进行享受 MacTex 带来的愉快体验！
 
-如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg) 或者您是 [brew](https://brew.sh/) 用户的话，您可以在终端输入下方的指令以安装程序：
+如果您的电脑上还没有安装过这个包的话，不妨[点击这里开始下载](http://mirror.ctan.org/systems/mac/mactex/mactex-20190508.pkg) 或者您是 [brew](https://brew.sh/) 用户的话，您可以在终端输入下方的指令以安装程序：
 ```terminal
 brew cask install mactex
 ```
